@@ -1,5 +1,5 @@
 {% set name = "vala" %}
-{% set version = "0.56.15" %}
+{% set version = "0.56.16" %}
 {% set minor_version = '.'.join(version.split('.')[:2]) %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://download.gnome.org/sources/vala/{{ minor_version }}/vala-{{ version }}.tar.xz
-  sha256: 535b6452ed310fd5fb5c7dd6794b6213dac3b48e645e5bff3173741ec2cb3f2b
+  sha256: 05487b5600f5d2f09e66a753cccd8f39c1bff9f148aea1b7774d505b9c8bca9b
 
 build:
   skip: true  # [win]
