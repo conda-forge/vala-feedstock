@@ -25,6 +25,7 @@ requirements:
   host:
     - glib
     - gobject-introspection
+    - dbus  # [linux]
 
 test:
   files:
