@@ -8,5 +8,5 @@ make install
 
 if [[ "${target_platform}" == "linux-64" ]]; then
   # The test script fails on osx-64 due to a too old bash
-  make check
+  make check || (cat tests/test-suite.log; exit 1)
 fi
